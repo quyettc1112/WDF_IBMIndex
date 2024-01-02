@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:IBMIndex"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="600">
     <Grid>
+        <Label Content="Weight(Kg)" HorizontalAlignment="Left" Margin="93,48,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Height(Cm)" HorizontalAlignment="Left" Margin="93,122,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="label" Content="BMI:" HorizontalAlignment="Left" Margin="104,265,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label Content="Status:" HorizontalAlignment="Left" Margin="93,329,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox InputScope="Number"  Name="tbWeight" HorizontalAlignment="Left" Margin="310,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Height="41" FontSize="24" Text="" TextAlignment="Center" TextChanged="tbWeight_TextChanged" ForceCursor="True" AutomationProperties.HelpText="Input Height" />
+        <TextBox  InputScope="Number" Name="tbHeight" HorizontalAlignment="Left" Margin="310,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Height="41" FontSize="24" TextAlignment="Center" />
+        <TextBox Name="tbResultBMI" HorizontalAlignment="Left" Margin="310,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="199" Height="40" FontSize="24" TextAlignment="Center" IsReadOnlyCaretVisible="True" IsEnabled="False"/>
+        <TextBlock Name="tblStatus" HorizontalAlignment="Left" Margin="310,340,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="31" Width="199" FontSize="24" TextAlignment="Center" Background="#FFE4C7C7"/>
+        <Button Name="btnCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="310,0,0,0" VerticalAlignment="Center" FontSize="24" Click="Button_Click"/>
+        <Button Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="451,0,0,0" VerticalAlignment="Center" FontSize="24" Click="btnClear_Click"/>
+
 
     </Grid>
 </Window>
